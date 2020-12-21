@@ -1,0 +1,22 @@
+{
+  "name": "seq",
+  "version": "1.0.0",
+  "description": "a seq'ish thing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ehawk82/seq.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ehawk82/seq/issues"
+  },
+  "homepage": "https://github.com/Ehawk82/seq#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
