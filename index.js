@@ -1,15 +1,4 @@
-
-function seq(requested_length) {
-  let myArray = [];
-  if (requested_length < 0) {
-    throw new RangeError("Must not be negative");
-  }
-
-  for (var i = 0; i < requested_length; i++) {
-    myArray.push(i);
-  }
-
-  return myArray;
+function add2num(x, y) {
+  return x + y;
 }
-
-module.exports = { seq };
+module.exports = { add2num };
