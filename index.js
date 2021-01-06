@@ -1,3 +1,5 @@
+/*Joining Stuff*/
+
 function join2(first_item,second_item) {
 	if (Number.isInteger(first_item)) {
         if(first_item < 0){
@@ -9,12 +11,15 @@ function join2(first_item,second_item) {
         	second_item = (second_item + -second_item) - +second_item;
         }
   	}
+
 	const first_itemString = first_item.toString(),
 		  second_itemString = second_item.toString()
 		  final = first_itemString + second_itemString;
 
 	return final;
 };
+
+/*Adding Stuff*/
 
 function add2(first_item,second_item) {
 	const final = first_item + second_item;
@@ -26,7 +31,15 @@ function add2(first_item,second_item) {
 	}
 };
 
-add2("a","b");
+/* 'product of' stuff */
+
+function mountUp(first_number,second_number) {
+	const total = first_number * second_number;
+
+	return total
+}
+
+/*Splitting Stuff*/
 
 function splitThis(x) {
 	const xLen = x.length,
@@ -37,5 +50,6 @@ function splitThis(x) {
 	return arr
 };
 
+/*EXPORT*/
 
-module.exports = { join2, add2, splitThis };
+module.exports = { join2,add2,mountUp,splitThis };

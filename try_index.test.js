@@ -1,11 +1,13 @@
 const lib = require('./index.js');
 const join2 = lib.join2
       add2 = lib.add2,
+      mountUp = lib.mountUp,
       splitThis = lib.splitThis;
 
 let a = "a", b = "b", c = "c", d = "d", f = "f", g = "g", h = "h";
 
 /*      join2        */
+
 test(
   'joining "a" and "a" makes "aa"!',
   () => expect( join2(a,a) ).toStrictEqual( "aa" )
@@ -39,8 +41,15 @@ test(
 );
 
 test(
-  'adding a and b is not going to work',
-  () => expect(add2("a","b")).toThrowError( add2 )
+  'adding 6 and 6 makes three',
+  () => expect(add2(6,6)).toStrictEqual( 12 )
+);
+
+/*   'product of'    */
+
+test(
+  'Mounting 5 with 7 makes 35',
+  () => expect(mountUp(5,7)).toStrictEqual( 35 )
 );
 
 /*   splitThis     */
